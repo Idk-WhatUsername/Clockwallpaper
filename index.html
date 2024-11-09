@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Wallpaper</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> 
+
+    <div id="time" class="transparent_gradient"></div>
+         <script>
+            function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session=""
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("time").innerText = time;
+    document.getElementById("time").textContent = time;
+    
+    setTimeout(showTime, 10);
+    
+}
+
+showTime();
+        </script>
+        <img src="porsche.png">
+</body>
+</html>
