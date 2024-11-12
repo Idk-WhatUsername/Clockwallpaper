@@ -6,13 +6,13 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #bdbdbd;
+    background: #e3e3e3;
     flex-direction: column;
     gap: 50px;
 }
 
 div{
-    color: rgb(143, 143, 143);
+    color: rgb(175, 175, 175);
     height: 400px;
     font-size: 1000%;
     font-family: "Inter";
